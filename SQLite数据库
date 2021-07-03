@@ -1,0 +1,24 @@
+//创建数据库
+sqlite3 数据库名.db
+//打开数据库若没有则创建
+.open 数据库名.db
+//查看数据库是否创建成功
+.databases
+//创建表
+CREATE TABLE 表名(
+   ID INT PRIMARY KEY     NOT NULL,
+   NAME           TEXT    NOT NULL,
+   AGE            INT     NOT NULL,
+   ADDRESS        CHAR(50),
+   SALARY         REAL
+);
+//列出创建成功的表
+.tables
+//向表中插入数据
+INSERT INTO 表名 VALUES (7, 'James', 24, 'Houston', 10000.00 );
+//获取表中数据
+SELECT * FROM 表名;
+//获取表中指定字段
+SELECT ID, NAME FROM 表名;
+//删除表
+DROP TABLE 表名;
