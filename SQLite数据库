@@ -22,6 +22,10 @@ SELECT * FROM 表名;
 SELECT ID, NAME FROM 表名;
 //删除表
 DROP TABLE 表名;
+//模糊查询
+SELECT column_list 
+FROM table_name
+WHERE column LIKE 'XXXX%'
 //C/C++接口
 1	sqlite3_open(const char *filename, sqlite3 **ppDb)
 该例程打开一个指向 SQLite 数据库文件的连接，返回一个用于其他 SQLite 程序的数据库连接对象。
