@@ -1,0 +1,9 @@
+//安装
+yum install mariadb-server
+yum install mariadb
+yum install mariadb-devel
+
+
+
+//查看机器是否有mariadb
+rpm -qa | grep mariadb
