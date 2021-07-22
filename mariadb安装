@@ -7,3 +7,31 @@ yum install mariadb-devel
 
 //查看机器是否有mariadb
 rpm -qa | grep mariadb
+
+
+//启动mariadb：
+service mariadb start     启动
+service mariadb restart  重启
+service mariadb stop     停止
+
+
+//连接数据库服务器的命令
+mysql -u [用户名] -p [密码];
+
+//查看数据库
+show databases;
+
+//进入到具体的数据库
+use [数据库名];
+
+//查看数据库下都有哪些数据表
+show tables;
+
+//查看表结构
+desc [表名称] --->查看表结构(表妹一列的具体信息 eg：字段名称，字段类型，属性等)
+
+
+//查看创建表的语句
+show create table [表名称];
+//或
+show create table [表名称]\G;
